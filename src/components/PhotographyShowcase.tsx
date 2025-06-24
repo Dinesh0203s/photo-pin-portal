@@ -27,6 +27,26 @@ const PhotographyShowcase = () => {
       url: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=800&h=600&fit=crop",
       title: "Family Memories",
       description: "Precious family gatherings"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=800&h=600&fit=crop",
+      title: "Nature's Beauty",
+      description: "Capturing wildlife in their natural habitat"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?w=800&h=600&fit=crop",
+      title: "Mountain Majesty",
+      description: "Breathtaking landscape photography"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?w=800&h=600&fit=crop",
+      title: "Forest Serenity",
+      description: "Peaceful pine forest captures"
+    },
+    {
+      url: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&h=600&fit=crop",
+      title: "Golden Hour Magic",
+      description: "Nature's dramatic lighting moments"
     }
   ];
 
