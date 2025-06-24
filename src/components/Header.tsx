@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Menu, X, Camera, User } from 'lucide-react';
+import { Menu, X, Camera, User, Settings } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
@@ -76,6 +76,11 @@ const Header = () => {
             <Button className="bg-gradient-to-r from-pink-500 to-orange-500 hover:from-pink-600 hover:to-orange-600 text-white">
               Sign Up
             </Button>
+            <Link to="/admin">
+              <Button variant="ghost" size="icon" className="text-gray-600 hover:text-pink-500">
+                <Settings className="h-5 w-5" />
+              </Button>
+            </Link>
             <Button variant="ghost" size="icon" className="text-gray-600 hover:text-pink-500">
               <User className="h-5 w-5" />
             </Button>
@@ -138,6 +143,15 @@ const Header = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact Us
+              </Link>
+              <Link 
+                to="/admin" 
+                className={`transition-colors font-medium ${
+                  isActive('/admin') ? 'text-pink-500' : 'text-gray-700 hover:text-pink-500'
+                }`}
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Admin Dashboard
               </Link>
               <div className="flex flex-col space-y-2 pt-4 border-t border-gray-200">
                 <Button variant="outline" className="border-pink-200 text-pink-600 hover:bg-pink-50">
